@@ -4,9 +4,7 @@ import path from "path";
 import fs from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DB_PATH = process.env.DB_PATH || path.join(__dirname, "../data/graph.db");
-
-fs.mkdirSync(path.join(__dirname, "../data"), { recursive: true });
+const DB_PATH = process.env.DB_PATH || path.join(__dirname, "./graph.db");
 
 export const db = new Database(DB_PATH);
 db.pragma("journal_mode = WAL");
