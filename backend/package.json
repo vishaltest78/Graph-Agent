@@ -1,0 +1,19 @@
+{
+  "name": "graph-query-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "ingest": "node ingest.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "graphology": "^0.25.4",
+    "graphology-traversal": "^0.3.1",
+    "@google/genai": "^1.46.0",
+    "better-sqlite3": "^12.8.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1"
+  }
+}
